@@ -43,7 +43,7 @@ public class Helix {
         return userChoice;
     }
 
-    //This method is creating the new position for for the lines beginning and end points
+    //This method is creating the new position for the lines beginning and end points
     public static int[] newPos(boolean clockW, int direc, int[] thisTime){
 
         //Calcuating coordinates if clockwise
@@ -173,8 +173,13 @@ public class Helix {
             //Creating blank canvas
             g.setColor(white);
             g.fillRect(100,100,200,200);
+
+
             //Randomly assigning color
+            //If you ask user for color comment out this line
             userColor = rand.nextInt(9);
+
+
             g.setColor(getColor(userColor));
             //Drawing line with coordinates
             g.drawLine(startStop[0], startStop[1], startStop[2], startStop[3]);
